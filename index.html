@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/homeStyle.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <title>Dream Cinema</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="entireNav fixed-top">
+
+        <span class="navTrigger" data-toggle="collapse" data-target="#navbarNav">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+        <nav class="navi navbar navbar-expand-lg navbar-dark fixed-top">
+          <a class="navbar-brand" id="len1" href="#">
+            <img src="assets/images/logo.png" class="logo">
+            <!-- <i class="fab fa-dyalog d-inline" style="color: #0047ab; font-size: larger;"></i> -->
+            <p class="d-inline">Dream Cinema</p>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="len2" class="nav-link hoverable" href="index.html">Home</span></a>
+              </li>
+    
+              <li class="nav-item">
+                <a id="len3" class="nav-link hoverable" href="about.html">About Us</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link hoverable" href="contactUs.html">Contact Us</a>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link hoverable loginRegister" href="Login.html">Login | Register</a>
+                <div class="dropdown show profileDropdown userProfile">
+                  <a class="btn dropdown-toggle profileDropdown" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                    <i class="fa fa-user-circle userIcon "></i>
+                    <span class="userIconName text-white emailID">example@example.com</span>
+                  </a>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right menuDropdown">
+                    <a class="dropdown-item manageAccount" href="manageAccount.html">
+                      <i class="fa fa-wrench pr-1" style="font-size: larger;">
+                      </i>
+                      Manage Account
+                    </a>
+    
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item logoutUser" href="#">
+                      <i class="fa fa-power-off pr-2" style="font-size: larger;">
+                      </i>Log Out</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    <!-- Header Carousel Images -->
+    <div id="headerCarousel" class="carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#headerCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#headerCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#headerCarousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner" role="TOP MAIN">
+            <div class="carousel-item slider active">
+                <img class="first-slide headerImage img-fluid" src="./assets/images/end_game.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption caption">
+                        <h1>Avengers: Age of Ultron</h1>
+                        <p>Airs in all cinemas on Feb 25</p>
+                        <p><a class="btn btn-lg btn-primary " href="https://www.youtube.com/watch?v=2wcj6SrX4zw"
+                                target="_blank" role="button">Watch Trailer</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item slider">
+                <img class="first-slide headerImage img-fluid" src="./assets/images/end_game.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption caption">
+                        <h1>Avengers: Age of Ultron</h1>
+                        <p>Airs in all cinemas on Feb 25</p>
+                        <p><a class="btn btn-lg btn-primary " href="https://www.youtube.com/watch?v=2wcj6SrX4zw"
+                                target="_blank" role="button">Watch Trailer</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item slider">
+                <img class="first-slide headerImage img-fluid" src="./assets/images/end_game.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption caption">
+                        <h1>Avengers: Age of Ultron</h1>
+                        <p>Airs in all cinemas on Feb 25</p>
+                        <p><a class="btn btn-lg btn-primary " href="https://www.youtube.com/watch?v=2wcj6SrX4zw"
+                                target="_blank" role="button">Watch Trailer</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Top Shows Container -->
+    <div class="container mt-3">
+        <h1>Today Shows</h1>
+        <div id="top-shows" class="carousel slide carousel_slider" data-ride="carousel">
+            <div class="carousel-inner" role = "Todays Shows Container">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card topShowCard">
+                                <img class="img-fluid topShowsImage" alt="100%x100%"
+                                    src="./assets/images/malificent.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Malificent</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=111" target="_blank">Get Ticket</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card topShowCard">
+                                <img class="img-fluid topShowsImage" alt="100%x100%" src="./assets/images/aqua.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Aqua Man</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=112" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card">
+                                <img class="img-fluid topShowsImage" alt="100%x100%"
+                                    src="./assets/images/ferdinand.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Ferdinand</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=113" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card">
+                                <img class="img-fluid topShowsImage" alt="100%x100%" src="./assets/images/12yr.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">12 Years a Slave</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=114" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card topShowCard">
+                                <img class="img-fluid topShowsImage" alt="100%x100%"
+                                    src="./assets/images/malificent.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Malificent</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=111" target="_blank">Get Ticket</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card topShowCard">
+                                <img class="img-fluid topShowsImage" alt="100%x100%" src="./assets/images/aqua.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Aqua Man</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=112" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card">
+                                <img class="img-fluid topShowsImage" alt="100%x100%"
+                                    src="./assets/images/ferdinand.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Ferdinand</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=113" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card">
+                                <img class="img-fluid topShowsImage" alt="100%x100%" src="./assets/images/12yr.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">12 Years a Slave</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=114" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card topShowCard">
+                                <img class="img-fluid topShowsImage" alt="100%x100%"
+                                    src="./assets/images/malificent.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Malificent</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=111" target="_blank">Get Ticket</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card topShowCard">
+                                <img class="img-fluid topShowsImage" alt="100%x100%" src="./assets/images/aqua.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Aqua Man</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=112" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card">
+                                <img class="img-fluid topShowsImage" alt="100%x100%"
+                                    src="./assets/images/ferdinand.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Ferdinand</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=113" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
+                            <div class="card">
+                                <img class="img-fluid topShowsImage" alt="100%x100%" src="./assets/images/12yr.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">12 Years a Slave</h4>
+                                    <a class="btn topShowBtn" href="cinema.html?id=114" target="_blank">Get Ticket</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="arrow">
+                <a class="btn " href="#top-shows" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn " href="#top-shows" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- First Parrallex -->
+    <div class="container-fluid">
+        <div class="parallax  align-items-center ">
+            <div class="row theatre align-items-center">
+                <div class="col-md-12 theatreCol text-center">
+                    <h1><i>Today In Theatre</i></h1>
+                    <p><i>
+                            <h3>Action, Adventure, Fantasy</h3>
+                        </i></p>
+                    <p><i>
+                            <h4>Reserve Your Seat before You Miss Tommorow!!</h4>
+                        </i> </p>
+                    <a href="cinema.html"><button class="btn btn-lg parallexBtn">Discover Now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- new items  -->
+    <div class="container-fluid main-con">
+        <div class="newitems mb-4">
+            <div class="tabContainer">
+                <h1 class="title mt-2"><i>New Items</i> </h1>
+                <div class="buttonContainer">
+                    <button onclick="showPanel(0,'')" id="button1">New Release</button>
+                    <button onclick="showPanel(1,'')" id="button2">Movies</button>
+                    <button onclick="showPanel(2,'')" id="button4">Cartoons</button>
+                </div>
+
+                <div class="tabPanel">
+                    <!-- New releases -->
+                    <p></p>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/NoTimeToDie.jpg"
+                                    data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=123">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">No Time TO Die</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/fast9.jpg"
+                                    data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=124">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Fast and Furious 9</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/GodzilaVs.jpg"
+                                    data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=125">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Godzilla Vs Kong</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/fre.jpg" data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=126">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Free Guy 2021</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tabPanel">
+                    <!-- movies -->
+                    <p> </p>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/mulan.jpeg"
+                                    data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=127">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Mulan</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/black widow.jpg"
+                                    data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=128">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Black Widow</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/holidate.jpg"
+                                    data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=129">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Holidate</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/jocker.jpg"
+                                    data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=130">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Joker 2</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="tabPanel">
+                    <p></p>
+                    <!-- Cartoons -->
+                    <div class="row ">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/croods.jpg"
+                                    data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=131">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Croods New Age</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/tom.jpg" data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=132">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Tom and Jerry</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/raya.png" data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=133">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Raya</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card hovereffect">
+                                <img class="card-img-top"
+                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                    alt="Thumbnail [100%x225]" src="assets/images/gru.jpg" data-holder-rendered="true">
+                                <div class="overlay">
+                                    <a class="info" href="cinema.html?id=134">Get Ticket</a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Rise of Gru</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- second Parralax  -->
+    <div class="container-fluid">
+        <div class="subscribe  align-items-center ">
+            <div class="row theatre align-items-center">
+                <div class="col-md-12 theatreCol text-center">
+                    <h1><i>Action </i><i class="adve"> Adventure</i><i> Fantasy</i></h1>
+                    <p><i>
+                            <h3 class="adve">Be The First To Know</h3>
+                        </i>
+                    </p>
+                    <h4>Reserve Your Seat before You Miss Tommorow!!</h4>
+                    <a href="Login.html"><button class="btn btn-lg btn-danger subButton">Subscribe</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-3 mx-auto">
+        <div class="container-fluid text-center">
+          <span class="text-muted h6">Dream Cinema © 2021</span>
+          <div class="text-white d-inline"> 
+            <a href="https://twitter.com/rickastley" rel="noopener" target="_blank" class="social text-white">TWITTER</a>
+            <a href="https://www.instagram.com/officialrickastley/" rel="noopener" target="_blank" class="social text-white">INSTAGRAM</a>
+          </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/Backend/Login_Signup.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
+
+</html>

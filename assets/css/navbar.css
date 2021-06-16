@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+.navbar {
+    position: fixed;
+    width: 100%;
+    transition: background-color 1.5s;
+    z-index: 100;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .navbarNotSoFat{
+    background-color: #000000 !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .rect {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #green {
+    background-color: #559065;
+    height: 100vh;
+  }
+  #blue {
+    background-color: #7eb3a7;
+    transition: background-color 1.5s;
+  }  
+  .darkbg{
+    /* background-color:-webkit-linear-gradient(left, #0047ab50 , #4caee348);; */
+    transition: background-color 1s;
+    background-color: #000000;
+  }
+  
+.hoverable{
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  tranform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+  font-family: 'Quicksand', 'Roboto';
+  font-size: large;
+}
+
+.hoverable:before{
+  position:absolute;
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+@media only screen and (max-width: 768px) {
+  .navTrigger{
+    display: block;
+  }
+  .navbar{
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+}
+
+/* NAVBAR TRIGGER ANIMATION  BASED ON https://codemyui.com/simple-hamburger-menu-x-mark-animation/*/
+.navTrigger {
+  display: none;
+  z-index: 10000;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 20px;
+  /* right: 0;
+
+  top: 0;
+  bottom: 0; */
+  /* margin-top: auto; 
+  margin-bottom: auto;  */
+}
+.navTrigger i {
+  background-color: #fff;
+  border-radius: 2px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+}
+.navTrigger i:nth-child(1) {
+  -webkit-animation: outT 0.8s backwards;
+  animation: outT 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.navTrigger i:nth-child(2) {
+  margin: 5px 0;
+  -webkit-animation: outM 0.8s backwards;
+  animation: outM 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.navTrigger i:nth-child(3) {
+  -webkit-animation: outBtm 0.8s backwards;
+  animation: outBtm 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.navTrigger.active i:nth-child(1) {
+  -webkit-animation: inT 0.8s forwards;
+  animation: inT 0.8s forwards;
+}
+.navTrigger.active i:nth-child(2) {
+  -webkit-animation: inM 0.8s forwards;
+  animation: inM 0.8s forwards;
+}
+.navTrigger.active i:nth-child(3) {
+  -webkit-animation: inBtm 0.8s forwards;
+  animation: inBtm 0.8s forwards;
+}
+.logo{
+  height: 40px;
+}
+.userIcon{
+  font-size: x-large;
+  color: #ffffff;
+}
+.userIconName{
+  text-decoration: none;
+  font-family: 'Quicksand', 'Roboto';
+  font-size: medium;
+  margin-bottom: 20px;
+}
+.profileDropdown{
+  background-color: rgba(0,0,0,0);
+  /* background-color: rgba(221, 214, 214, 0.144); */
+  border-radius: 5px;
+  /* overflow: hidden; */
+}
+.menuDropdown{
+  background-color: rgb(255, 255, 255);
+  
+}
+.dropdown-item{
+  color: black !important;
+  background-color: white;
+;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.911) !important;
+  color:  #0047ab !important;
+}
+.loginRegister{
+  display: none;
+}
+.userProfile{
+  display: none;  
+}
+/* */
+@-webkit-keyframes inM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+@keyframes inM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes outM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+@keyframes outM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes inT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(9px) rotate(135deg);
+  }
+}
+@keyframes inT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+@-webkit-keyframes outT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(9px) rotate(135deg);
+  }
+}
+@keyframes outT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+@-webkit-keyframes inBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-9px) rotate(135deg);
+  }
+}
+@keyframes inBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-9px) rotate(135deg);
+  }
+}
+@-webkit-keyframes outBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-9px) rotate(135deg);
+  }
+}
+@keyframes outBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-9px) rotate(135deg);
+  }
+}
+/* BOUNCE */
+
+@keyframes bounce-animation {
+  12.5% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  25% {
+    -webkit-transform: translateY(-3.5px);
+    transform: translateY(-3.5px);
+  }
+
+  37.5% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-2.5px);
+    transform: translateY(-2.5px);
+  }
+
+  60% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+
+  75% {
+    -webkit-transform: translateY(-1.5);
+    transform: translateY(-1.5);
+  }
+  100% {
+    -webkit-transform: translateY(1);
+    transform: translateY(1);
+  }
+}
+/* .bounce {
+  animation-name: bounce-animation;
+  animation-duration:7s;
+} */
+#len1{
+  animation-delay: 0s;
+}
+#len2{
+  animation-delay: 0.1s;
+}
+#len3{
+  animation-delay: 0.2s;
+}
+#len4{
+  animation-delay: 0.3s;
+}
+#len5{
+  animation-delay: 0.4s;
+}
+#len6{
+  animation-delay: 0.5s;
+}
+#len7{
+  animation-delay: 0.6s;
+}
+
+@media only screen and (max-width: 991px) {
+  .navTrigger{
+    display: block;
+  }
+  .navbar{
+    background-color: rgb(0, 0, 0);
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Login</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+
+<body>
+  <div class="entireNav fixed-top">
+
+    <span class="navTrigger" data-toggle="collapse" data-target="#navbarNav">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+    <nav class="navi navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" id="len1" href="index.html">
+        <img src="assets/images/logo.png" class="logo">
+        <!-- <i class="fab fa-dyalog d-inline" style="color: #0047ab; font-size: larger;"></i> -->
+        <p class="d-inline">Dream Cinema</p>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="len2" class="nav-link hoverable" href="index.html">Home</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a id="len3" class="nav-link hoverable" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link hoverable" href="contactUs.html">Contact Us</a>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link hoverable loginRegister" href="Login.html">Login | Register</a>
+            <div class="dropdown show profileDropdown userProfile">
+              <a class="btn dropdown-toggle profileDropdown" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                <i class="fa fa-user-circle userIcon "></i>
+                <span class="userIconName text-white emailID">example@example.com</span>
+              </a>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right menuDropdown">
+                <a class="dropdown-item manageAccount" href="manageAccount.html">
+                  <i class="fa fa-wrench pr-1" style="font-size: larger;">
+                  </i>
+                  Manage Account
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item logoutUser" href="#">
+                  <i class="fa fa-power-off pr-2" style="font-size: larger;">
+                  </i>Log Out</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login</div>
+        <div class="title signup">Signup</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form class="login" id="signinform">
+            <div class="field">
+              <span class="fa fa-user icons" aria-hidden="true"></span>
+              <input type="email" placeholder="Email Address" required class="emailform">
+            </div>
+            <div class="field">
+              <span class="fa fa-lock icons" aria-hidden="true"></span>
+              <input type="password" placeholder="Password" required class="password">
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Don't have account? <a href="">Signup now</a></div>
+          </form>
+          <form class="signup" id="signupform">
+            <div class="field">
+              <span class="fa fa-user icons" aria-hidden="true"></span>
+              <input type="email" placeholder="Email Address" required class="emailform">
+            </div>
+            <div class="field">
+              <span class="fa fa-lock icons" aria-hidden="true"></span>
+              <input type="password" placeholder="Password" required class="password">
+            </div>
+            <div class="field">
+              <span class="fa fa-lock icons" aria-hidden="true"></span>
+              <input type="password" placeholder="Confirm password" required class="confirmPassword">
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer py-3 mx-auto">
+    <div class="container-fluid text-center">
+      <span class="text-muted h6">Dream Cinema © 2021</span>
+      <div class="text-white d-inline"> 
+        <a href="https://twitter.com/rickastley" rel="noopener" target="_blank" class="social text-white">TWITTER</a>
+        <a href="https://www.instagram.com/officialrickastley/" rel="noopener" target="_blank" class="social text-white">INSTAGRAM</a>
+      </div>
+    </div>
+  </footer>
+  <!-- <div class="rect" id="green"></div>
+  <div class="rect" id="blue"></div> -->
+
+ 
+
+
+  <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+  <script src="assets/js/Backend/Login_Signup.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/login.js"></script>
+<script>
+    </script>
+</body>
+
+</html>

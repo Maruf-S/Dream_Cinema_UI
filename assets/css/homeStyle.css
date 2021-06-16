@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* header Carousel */
+.headerImage {
+  height: 35rem;
+  width: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .headerImage {
+    max-height: 35rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headerImage {
+    max-height: 25rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .headerImage {
+    max-height: 20rem;
+    width: 100%;
+  }
+}
+
+/* Top shows */
+.topShowsImage {
+  height: 350px;
+}
+.topShowCard .card-body {
+  height: 8rem;
+  text-align: center;
+}
+.topShowBtn {
+  background-color: #0b3bc0;
+  color: white;
+}
+
+.arrow {
+  margin: 1% 0;
+  text-align: center;
+}
+/* First Parallax */
+
+.parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cine6.jpg);
+  height: 35rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.theatre {
+  background: #3334352d;
+  padding-top: 13%;
+  padding-bottom: 10%;
+  color: rgb(255, 255, 255);
+}
+
+.parallexBtn {
+  background-color: #ffffffda;
+  color: black;
+  border-radius: 35px;
+  font-style: italic;
+}
+.parallexBtn:hover {
+  background-color: #0f1de9;
+  color: rgb(253, 250, 250);
+}
+@media screen and (max-width: 700px) {
+  .theatre {
+    padding-top: 25%;
+    padding-bottom: 10%;
+  }
+  .theatreCol {
+    font-size: 1rem;
+  }
+}
+/* new items style */
+
+.tabContainer {
+  height: 100%;
+  margin: auto 2%;
+}
+.tabContainer .buttonContainer {
+  height: 50px;
+}
+
+.tabContainer .buttonContainer button {
+  width: 12%;
+  height: 100%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.tabContainer .buttonContainer button:hover {
+  border-bottom: 3px solid #0b3bc0;
+}
+
+.tabContainer .buttonContainer button:focus {
+  border-bottom: 3px solid #000000;
+  border-radius: 5%;
+}
+.tabContainer .tabPanel {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+.tabPanel .card {
+  text-align: center;
+  height: 30rem;
+}
+.tabPanel .card img {
+  height: 26rem;
+}
+#button1 {
+  border-right: black solid 1px;
+}
+#button2 {
+  border-right: black solid 1px;
+}
+#button3 {
+  border-right: black solid 1px;
+}
+@media screen and (max-width: 1000px) {
+  .tabContainer .buttonContainer button {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tabContainer .buttonContainer button {
+    font-size: small;
+    width: 4rem;
+  }
+}
+/* Second Parallex */
+.subscribe {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/subs.jpg);
+  height: 30rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.adve {
+  color: #e66b1e;
+}
+.sub {
+  color: white;
+  padding-top: 10%;
+}
+.subButton {
+  background-color: red;
+  color: white;
+}
+
+.hovereffect {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #0b3bc0da;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 55% 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.07);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}

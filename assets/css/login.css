@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Quicksand';
+  /* font-family: 'Poppins', sans-serif; */
+  /* color: #fff !important; */
+/* border: white 1px solid; */
+}
+html{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
+}
+.main{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+body{
+/*   
+  display: grid;
+  place-items: center; */
+  height: 100%;
+  width: 100%;
+  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
+  background-image: url('../images/loginBackgrounds/background4.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: background-image 1s linear;
+  transition: background-image 1s linear;
+}
+body:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+::selection{
+  background: #0047ab ;
+  color: #fff;
+}
+
+.wrapper{
+  width: 100%;
+  z-index: 50;
+  overflow: hidden;
+  max-width: 390px;
+  /* background: #fff; */
+  padding: 30px;
+  border-radius: 5px;
+  /* box-shadow: 0px 15px 20px rgba(0,0,0,0.1); */
+  background: #ffffff0a;
+  /* 0047ab15 */
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+  color: white ;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid #0047abd0 ;
+  border-radius: 5px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+  color: #000;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #0047ab , #4caee3);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login{
+  color:rgba(255,255,255,0.3) !important;
+}
+#login:checked ~ label.signup{
+  color:rgba(255,255,255,0.3) !important;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  text-indent: 12px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: #0047ab ;
+  box-shadow: inset 0 0 3px #0047ab;
+}
+
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+/* .form-inner form .pass-link a, */
+.form-inner form .signup-link a{
+  color: #0047ab;
+  text-decoration: none;
+}
+/* .form-inner form .pass-link a:hover, */
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  /* background: -webkit-linear-gradient(left, #add8e6, #4caee3); */
+  background: -webkit-linear-gradient(right, #0047ab, #0047abb9, #1e3a94d0, #4caee3);
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+form .btn:hover .btn-layer{
+  background: -webkit-linear-gradient(right, #0047ab, #0047ab, #1e3a94, #4caee3);
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.icons{
+  z-index: 100;
+  size: 2px;
+  position: absolute;
+  top: 30%; 
+  left: 8px;
+  font-size: 1em;
+  opacity:.5;
+  color:#0047ab;
+  transition: all 0.4s ease;
+}
+.form-inner form .field:focus-within .icons{
+  opacity: 1;
+}
+#b1 {
+  /* display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center; */
+  background: url('../images/loginBackgrounds/background1.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+#b2 {
+  /* display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center; */
+  background: url('../images/loginBackgrounds/Background4.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+#b4 {
+  /* display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center; */
+  background: url('../images/loginBackgrounds/Background2.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+#b3 {
+  /* display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center; */
+  background: url('../images/loginBackgrounds/background3.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.trans{
+  background:-webkit-linear-gradient(left, #0047ab50 , #4caee348);;
+}
+/* #navbarContent{
+  background-color: red;
+} */
+/* #bg1 { background: hsl(0, 50%, 50%); }
+#bg2 { background: hsl(30, 50%, 50%); }
+#bg3 { background: hsl(60, 50%, 50%); }
+#bg4 { background: hsl(90, 50%, 50%); }
+#bg5 { background: hsl(120, 50%, 50%); }
+#bg6 { background: hsl(150, 50%, 50%); }
+#bg7 { background: hsl(180, 50%, 50%); }
+#bg8 { background: hsl(210, 50%, 50%); }
+#bg9 { background: hsl(240, 50%, 50%); }
+#bg10 { background: hsl(270, 50%, 50%); } */

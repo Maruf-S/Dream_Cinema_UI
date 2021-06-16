@@ -1,0 +1,106 @@
+body{
+    /* margin-top:20px; */
+    color: #bcd0f7;
+    background: #1A233A;
+}
+.topOne{
+    background-color: #1A233A;
+}
+.card, .list-group-item-action{
+    color: #bcd0f7;
+    background: #1A233A;
+}
+
+.inputType:focus {
+    color: #bcd0f7;
+    background-color: #252e46ad;
+  
+  }
+.inputType:disabled{
+    color: #ffffff;
+    background: #1A233A;
+}
+.tab, .tab-pane{
+    height: 30rem;
+}
+
+.ui-w-80 {
+    width: 80px !important;
+    height: auto;
+}
+.cancel, .saveChange{
+    margin-left: 36rem;
+}
+
+.saveChangeG{
+    margin-top: 4rem;
+    margin-left: 36rem;
+}
+.saveChangeC{
+    margin-top: 10rem;
+    margin-left: 36rem;
+}
+.cnacelG {
+    margin-top: 4rem;
+}
+.cnacelC{
+    margin-top: 10rem;
+}
+
+.btn-default {
+    color: rgb(10, 10, 10);
+    background-color: #f2f3f7;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn {
+    cursor: pointer;
+}
+.btn-danger{
+    margin-top: 1%;
+}
+.email1{
+    color: white;
+}
+.card {
+    background: #272e48;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+}
+.form-control {
+    border: 1px solid #596280;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: #1A233A;
+    color: #bcd0f7;
+}
+.entireNav{
+        padding-bottom: 50px;
+}
+.navbar{
+    /* padding-bottom: 50px; */
+    background-color: #000000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.svbutton{
+    background-color: #0047ab;
+}
+.list-group-item-action:hover{
+    background-color: #85a0d8;
+    color: #1A233A;
+    border-color:#1A233A;
+    /* color: red !important; */
+}
+.bodyContainer{
+    /* style="border: 2px #272e48 solid;" */
+    box-shadow: -1px 4px 20px 0px rgba(0,0,0,0.75);
+}

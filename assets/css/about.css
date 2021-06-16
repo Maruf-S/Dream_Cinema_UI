@@ -1,0 +1,37 @@
+.titleImg{
+    margin-top: 0px;
+    width: 100%;
+    height: 35rem;
+    align-items: center;
+}
+
+.text-block{
+    position: absolute;
+    top: 30%;
+}
+
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+#introHr{
+    width: 15%;
+    background-color: #0047ab;
+    height: 7px;
+    margin-left: 0%;
+}
+
+.nav-link{
+    color: white;
+    color: brown;
+    text-decoration: none;
+}
+
+.d-block{
+    
+    /* width: 20rem; */
+    height: 500px;
+}
+
+
