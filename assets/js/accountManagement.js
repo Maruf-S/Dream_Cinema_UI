@@ -1,3 +1,6 @@
+var db = new Localbase('DreamCinema');
+var baseUrl = "http://127.0.0.1:5000/"
+
 const generalForm = document.querySelector('#Gform');
 const passwordChangeForm = document.querySelector('#passwordChangeForm');
 const socialsForm = document.querySelector('#socialsForm');
@@ -108,25 +111,61 @@ async function PasswordChange(e) {
 ///////////////////////////////////
 ////SET SOCIAL MEDIA LINKS/////////
 ///////////////////////////////////
-socialsForm.addEventListener('submit', socialsChange);
 const twitterInput = socialsForm.querySelector('.twitterInput');
 const instaInput = socialsForm.querySelector('.instaInput');
-async function socialsChange(e) {
-    e.preventDefault();
-    await ChangeSocials(readLoginCookie(), twitterInput.value, instaInput.value).then(
-        (response) => {
-            switch (response) {
-                case 1:
-                    swal("Success", "Changes were successfull", "success");
-                    break;
-                case 10:
-                    swal("Error!", "An Unknown error occoured, Please refresh the page!", "error");
-                    // alert("Unknown Error occurred")
-                    break;
+socialsForm.addEventListener('submit', SocialMediaChange(twitterInput, instaInput));
+
+//#region social_media
+async function SocialMediaChange(twitter_link, instagram_link) {
+    //1,2,10 are error codes
+    let _data = {
+        'Twitter_link': twitter_link,
+        'Instagram_link': instagram_link, 
+      }
+    return await fetch(`${baseUrl}api/v1/register`, {
+    method: "PUT",
+    body: JSON.stringify(_data),
+    headers: {"Content-type": "application/json; charset=UTF-8",
+                "Authorization": `JWT ${readLoginCookie()}`
             }
+    })
+    .then(response => {
+        if(response['status']==200){
+            swal("Success", "Changes were successfull", "success");
         }
-    )
+        else if(response['status']==404){
+            swal("Movie not found");
+        }
+        else{
+            res = response.json();
+            return 1;
+        }
+    }) 
+    .catch(err => {
+        console.log(err);
+        return 10;
+        // return `Unknown error occurred${error}`;
+    });
 }
+//#endregion
+
+
+// async function socialsChange(e) {
+//     e.preventDefault();
+//     await ChangeSocials(readLoginCookie(), twitterInput.value, instaInput.value).then(
+//         (response) => {
+//             switch (response) {
+//                 case 1:
+//                     swal("Success", "Changes were successfull", "success");
+//                     break;
+//                 case 10:
+//                     swal("Error!", "An Unknown error occoured, Please refresh the page!", "error");
+//                     // alert("Unknown Error occurred")
+//                     break;
+//             }
+//         }
+//     )
+// }
 //SET NEWSLETTER PREFERENES//
 preferencesForm.addEventListener('submit', preferencesChange);
 const newsLetterCheckbox = preferencesForm.querySelector('.newsLetterCheckbox');
