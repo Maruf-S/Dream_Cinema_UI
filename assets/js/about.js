@@ -1,3 +1,5 @@
+var baseUrl = "http://127.0.0.1:5000/"
+
 var moviesDatabase = [{
     "id": 111,
     "name": "Maleficent",
@@ -335,3 +337,23 @@ var moviesDatabase = [{
     "ticket": "Available"
 }
 ]
+forEach
+moviesDatabase.forEach(addMovie())
+
+async function addMovie(data) {
+    return await fetch(`${baseUrl}/api/v1/moive`, {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {"Content-type": "application/json; charset=UTF-8"
+            }
+    })
+    .then(response => {
+        console.log(response)
+    }) 
+    .catch(err => {
+        console.log(err);
+
+    });
+}
+//#endregion
+
