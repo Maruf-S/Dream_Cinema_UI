@@ -1,4 +1,8 @@
-// for the New item part
+var baseUrl = "http://127.0.0.1:5000/"
+
+// file query
+var parrentCarousel = document.querySelector("#innerCarousel");
+var newRelease = document.querySelector("#newReleaseParrent");
 
 var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
 var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
@@ -23,3 +27,24 @@ $('.carousel_slider').carousel({
   });
 
 // end
+
+// api calls for top movies
+function getMovies() {
+  fetch(`${baseUrl}/api/v1/movies`, {
+  method: "GET",
+  body: JSON.stringify(_data),
+  headers: {"Content-type": "application/json; charset=UTF-8"
+          }
+  })
+  .then(response => response.json())
+        .then(function(data){
+      // work goes here
+      console.log(data)
+
+  }) 
+  .catch(err => {
+      console.log(err);
+      // return `Unknown error occurred${error}`;
+  });
+}
+//#endregion

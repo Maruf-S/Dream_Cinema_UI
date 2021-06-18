@@ -132,8 +132,8 @@
     <div class="container mt-3">
         <h1>Today Shows</h1>
         <div id="top-shows" class="carousel slide carousel_slider" data-ride="carousel">
-            <div class="carousel-inner" role = "Todays Shows Container">
-                <div class="carousel-item active">
+            <div class="carousel-inner " id="innerCarousel" role = "Todays Shows Container">
+                <div class="carousel-item active ">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12 topShowCard">
                             <div class="card topShowCard">
@@ -320,207 +320,209 @@
                     <button onclick="showPanel(1,'')" id="button2">Movies</button>
                     <button onclick="showPanel(2,'')" id="button4">Cartoons</button>
                 </div>
-
-                <div class="tabPanel">
-                    <!-- New releases -->
-                    <p></p>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/NoTimeToDie.jpg"
-                                    data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=123">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">No Time TO Die</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/fast9.jpg"
-                                    data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=124">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Fast and Furious 9</h4>
+                <div id="newReleaseParrent" >
+                    <div class="tabPanel">
+                        <!-- New releases -->
+                        <p></p>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/NoTimeToDie.jpg"
+                                        data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=123">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">No Time TO Die</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/GodzilaVs.jpg"
-                                    data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=125">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Godzilla Vs Kong</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/fre.jpg" data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=126">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Free Guy 2021</h4>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/fast9.jpg"
+                                        data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=124">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Fast and Furious 9</h4>
+                                    </div>
                                 </div>
                             </div>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/GodzilaVs.jpg"
+                                        data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=125">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Godzilla Vs Kong</h4>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/fre.jpg" data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=126">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Free Guy 2021</h4>
+                                    </div>
+                                </div>
+                            </div>
+    
                         </div>
-
+    
                     </div>
-
-                </div>
-
-                <div class="tabPanel">
-                    <!-- movies -->
-                    <p> </p>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/mulan.jpeg"
-                                    data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=127">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Mulan</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/black widow.jpg"
-                                    data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=128">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Black Widow</h4>
+    
+                    <div class="tabPanel">
+                        <!-- movies -->
+                        <p> </p>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/mulan.jpeg"
+                                        data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=127">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Mulan</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/holidate.jpg"
-                                    data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=129">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Holidate</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/jocker.jpg"
-                                    data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=130">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Joker 2</h4>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/black widow.jpg"
+                                        data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=128">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Black Widow</h4>
+                                    </div>
                                 </div>
                             </div>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/holidate.jpg"
+                                        data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=129">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Holidate</h4>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/jocker.jpg"
+                                        data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=130">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Joker 2</h4>
+                                    </div>
+                                </div>
+                            </div>
+    
                         </div>
-
+    
                     </div>
-
-                </div>
-
-
-
-                <div class="tabPanel">
-                    <p></p>
-                    <!-- Cartoons -->
-                    <div class="row ">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/croods.jpg"
-                                    data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=131">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Croods New Age</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/tom.jpg" data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=132">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Tom and Jerry</h4>
+    
+    
+    
+                    <div class="tabPanel">
+                        <p></p>
+                        <!-- Cartoons -->
+                        <div class="row ">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/croods.jpg"
+                                        data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=131">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Croods New Age</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/raya.png" data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=133">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Raya</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="card hovereffect">
-                                <img class="card-img-top"
-                                    data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                                    alt="Thumbnail [100%x225]" src="assets/images/gru.jpg" data-holder-rendered="true">
-                                <div class="overlay">
-                                    <a class="info" href="cinema.html?id=134">Get Ticket</a>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Rise of Gru</h4>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/tom.jpg" data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=132">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Tom and Jerry</h4>
+                                    </div>
                                 </div>
                             </div>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/raya.png" data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=133">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Raya</h4>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card hovereffect">
+                                    <img class="card-img-top"
+                                        data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                        alt="Thumbnail [100%x225]" src="assets/images/gru.jpg" data-holder-rendered="true">
+                                    <div class="overlay">
+                                        <a class="info" href="cinema.html?id=134">Get Ticket</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rise of Gru</h4>
+                                    </div>
+                                </div>
+                            </div>
+    
                         </div>
-
                     </div>
                 </div>
+                
 
             </div>
 
