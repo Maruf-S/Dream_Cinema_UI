@@ -12,7 +12,8 @@ async function SignUpUser(email, password) {
     method: "POST",
     body: JSON.stringify(_data),
     headers: {"Content-type": "application/json; charset=UTF-8"
-            }
+            },
+            mode : 'no-cors'
     })
     .then(response => {
         if(response['status']==409){
