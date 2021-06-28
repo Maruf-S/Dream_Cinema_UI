@@ -12,9 +12,8 @@ fetch(`${baseUrl}api/v1/current_user`, {
       headers: {"Content-type": "application/json; charset=UTF-8",
                "Authorization": `JWT ${readLoginCookie()}`
               },
-              mode : 'no-cors'
       })
-      .then(response =>response) 
+      .then(response =>response.json()) 
       .then(json => {
           console.log(json['status_code'])
           if(json['status_code']==401){

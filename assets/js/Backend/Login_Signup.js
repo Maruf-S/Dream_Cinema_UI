@@ -8,12 +8,12 @@ async function SignUpUser(email, password) {
         'Email': email,
         'Password': password, 
       }
-    return await fetch(`${baseUrl}/api/v1/register`, {
+    return await fetch(`${baseUrl}api/v1/register`, {
     method: "POST",
     body: JSON.stringify(_data),
     headers: {"Content-type": "application/json; charset=UTF-8"
             },
-            mode : 'no-cors'
+            
     })
     .then(response => {
         if(response['status']==409){
